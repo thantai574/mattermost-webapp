@@ -36,13 +36,16 @@ import solarizedDarkCSS from '!!file-loader?name=files/code_themes/[hash].[ext]!
 // eslint-disable-line import/order
 import solarizedLightCSS from '!!file-loader?name=files/code_themes/[hash].[ext]!highlight.js/styles/solarized-light.css'; // eslint-disable-line import/order
 
-export const PluginSettings = {
+export const SettingsTypes = {
     TYPE_TEXT: 'text',
     TYPE_BOOL: 'bool',
     TYPE_RADIO: 'radio',
+    TYPE_BANNER: 'banner',
     TYPE_DROPDOWN: 'dropdown',
     TYPE_GENERATED: 'generated',
     TYPE_USERNAME: 'username',
+    TYPE_BUTTON: 'button',
+    TYPE_LANGUAGE: 'language',
 };
 
 export const Preferences = {
@@ -476,7 +479,7 @@ export const GroupUnreadChannels = {
 };
 
 export const Constants = {
-    PluginSettings,
+    SettingsTypes,
     Preferences,
     SocketEvents,
     ActionTypes,
